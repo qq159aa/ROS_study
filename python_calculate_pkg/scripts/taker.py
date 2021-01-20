@@ -12,7 +12,7 @@ def callback(data):
     rospy.loginfo(data.data)
 
 def taker():
-    rospy.init_node('taker', anonymous=True)
+    rospy.init_node('taker', anonymous=0)
     rospy.Subscriber("randint", Float64MultiArray, callback)
     rospy.spin()
 

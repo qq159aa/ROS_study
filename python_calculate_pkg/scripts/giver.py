@@ -10,7 +10,7 @@ from random import *
 
 def giver():
     pub = rospy.Publisher('randint', Float64MultiArray, queue_size=10)
-    rospy.init_node('giver',anonymous=True)   
+    rospy.init_node('giver',anonymous=0)   
     rate = rospy.Rate(10) #10hz
     
     while not rospy.is_shutdown():

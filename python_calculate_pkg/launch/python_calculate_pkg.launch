@@ -1,0 +1,4 @@
+<launch>
+  <node name="giver" pkg="python_calculate_pkg" type="giver.py" />
+  <node name="taker" pkg="python_calculate_pkg" type="taker.py" />
+</launch>
