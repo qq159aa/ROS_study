@@ -21,7 +21,7 @@ def talker():
     # create Rate object named rate rate(n), loop 'n' time per sec
     
     while not rospy.is_shutdown():
-        hello_str = "hello world %s" % rospy.get_time()
+        hello_str = "hello world" 
         # declare String will publish
         rospy.loginfo(hello_str)
         # print msg to screen
